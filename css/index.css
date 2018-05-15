@@ -1,0 +1,435 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "acne","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.element {
+  background-color: #f2f2f2;
+}
+
+.element .text {
+  text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+  font-size: 1em;
+}
+
+.image {
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.container-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 36;
+  width: 100%;
+  height: 32px;
+  background-color: #f2f2f2;
+}
+
+.container-10,
+.container-11,
+.container-9 {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+.container-12 {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 10;
+  width: 100%;
+  height: 58px;
+  background-color: #f2f2f2;
+}
+
+.container-13 {
+  float: left;
+  width: 137px;
+  height: 58px;
+}
+
+.container-14 {
+  float: left;
+  width: 265px;
+  height: 58px;
+}
+
+.container-15 {
+  float: right;
+  width: 38.4171668901%;
+  height: 58px;
+  margin-right: 150px;
+}
+
+.container-16 {
+  float: right;
+  clear: both;
+  width: 12.4168283441%;
+  height: 58px;
+  margin-top: -58px;
+}
+
+.container-2 {
+  float: left;
+  width: 100px;
+  height: 32px;
+}
+
+.container-3 {
+  float: left;
+  width: 300px;
+  height: 32px;
+  margin-left: 0.08073%;
+}
+
+.container-4 {
+  float: right;
+  width: 100px;
+  height: 32px;
+}
+
+.container-5 {
+  position: relative;
+  float: left;
+  z-index: 23;
+  width: 100%;
+  min-height: 21px;
+  margin-top: 32px;
+  background-color: #f2f2f2;
+}
+
+.container-6 {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.container-7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 21;
+  width: 380px;
+  height: 72px;
+  padding-left: 37px;
+}
+
+.container-8 {
+  float: left;
+  width: 380px;
+  height: 72px;
+}
+
+.element-1 {
+  float: left;
+  width: 100%;
+  height: 30px;
+  margin-top: 2px;
+  background-image: url('../images/logo_24.png');
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: center center;
+}
+
+.element-2 {
+  float: left;
+  width: 34.5%;
+  height: 32px;
+  margin-left: 0.5%;
+}
+
+.element-2:hover {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  background-color: #e6e6e6;
+}
+
+.element-2:active,
+.element-2:focus {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+.element-3 {
+  float: left;
+  width: 32%;
+  height: 32px;
+}
+
+.element-4 {
+  float: left;
+  width: 32.75%;
+  height: 32px;
+  margin-left: 0.23438%;
+}
+
+.element-5 {
+  float: right;
+  width: 80px;
+  height: 32px;
+}
+
+.element-3:hover,
+.element-4:hover,
+.element-5:hover {
+  background-color: #e6e6e6;
+}
+
+.element-6 {
+  float: left;
+  width: 100%;
+  height: 58px;
+}
+
+.element-7,
+.element-8 {
+  float: left;
+  width: 50%;
+  height: 58px;
+}
+
+.image-1 {
+  position: relative;
+  z-index: 17;
+}
+
+.text-1 {
+  float: left;
+  width: 100%;
+  margin-top: 8px;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.text-2 {
+  float: left;
+  width: 100%;
+  min-height: 18px;
+  margin-top: 8px;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.text-3 {
+  float: left;
+  width: 100%;
+  min-height: 17px;
+  margin-top: 8px;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.text-4 {
+  float: right;
+  width: 90%;
+  min-height: 22px;
+  margin: 8px 10% 0 0;
+  text-align: right;
+  color: rgb(0, 0, 0);
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.text-5 {
+  float: left;
+  width: 100%;
+  height: 36px;
+  font-size: 2.143em;
+  color: rgb(0, 0, 0);
+}
+
+
+.text-5::before {
+    content: "";
+	left: -.75em;
+	font-family: icons;
+    font-size: inherit;
+    font-style: normal;
+    font-weight: 400;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: flash;
+    animation-timing-function: steps(1);
+}
+
+.text-6 {
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 36px;
+  min-height: 35px;
+  font-size: 2.143em;
+  color: rgb(0, 0, 0);
+}
+
+.text-6::before {
+    content: "";
+	left: -.75em;
+	font-family: icons;
+    font-size: inherit;
+    font-style: normal;
+    font-weight: 400;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: flash;
+    animation-timing-function: steps(1);
+}
+
+.text-7,
+.text-8,
+.text-9 {
+  float: left;
+  width: 100%;
+  min-height: 24px;
+  margin-top: 16px;
+  line-height: 2.18;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+@media(max-width: 1020px) {
+  .container .image {
+    height: auto;
+  }
+
+  .container .container-15 {
+    width: 37.2998973636%;
+    margin-top: 62px;
+  }
+
+  .container .container-16 {
+    width: 11.582591645%;
+  }
+
+  .container .container-3 {
+    margin-left: 0.07966%;
+  }
+
+  .container .container-7 {
+    width: 22.2487745098%;
+  }
+
+  .container .container-8 {
+    width: 65.5466813549%;
+  }
+
+  .container .element-5 {
+    width: 100px;
+  }
+
+  .container .element-6 {
+    width: 93.4589299171%;
+  }
+
+  .container .image-1 {
+    position: relative;
+    z-index: 17;
+  }
+
+  .container .text-5 {
+    position: relative;
+    z-index: 19;
+  }
+
+  .container .text-6 {
+    position: relative;
+    z-index: 18;
+    width: 21.7121848739%;
+  }
+
+  .container-12 {
+    position: relative;
+    z-index: 10;
+  }
+
+  .container-5 {
+    position: relative;
+    z-index: 23;
+  }
+
+  .element .text-4 {
+    margin-top: 5px;
+  }
+}
+
+@media(max-width: 770px) {
+  body {
+    font-size: 0.875em;
+  }
+
+  .container .image {
+    height: auto;
+  }
+
+  .container .container-14 {
+    position: relative;
+    z-index: 6;
+  }
+
+  .container .container-15 {
+    position: relative;
+    clear: both;
+    z-index: 1;
+  }
+
+  .container .container-3 {
+    margin-left: 0.07914%;
+  }
+
+  .container .container-7 {
+    width: 22.2483766233%;
+  }
+
+  .container .container-8 {
+    width: 65.5417730755%;
+  }
+
+  .container .image-1 {
+    position: relative;
+    z-index: 17;
+  }
+
+  .container .text-5 {
+    position: relative;
+    z-index: 19;
+  }
+
+  .container .text-6 {
+    position: relative;
+    z-index: 18;
+    width: 21.7088783746%;
+  }
+
+  .container-12 {
+    position: relative;
+    z-index: 10;
+  }
+
+  .container-5 {
+    position: relative;
+    z-index: 23;
+  }
+}
