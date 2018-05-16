@@ -1,158 +1,50 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1.0">
-  <title>index</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <meta name="description" content="">
+  <meta name="author" content="ERBG">
+  <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="css/standardize.css">
-  <link rel="stylesheet" href="css/index-grid.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/fonts.min.css">
-  <style>
-/*
-*修改说明：
-*修改按钮间距：.radio-check->width
-*修改按钮大小：.radio-check-color->width,height
-*修改按钮形状：.radio-check-color->border-radius
-*修改按钮选择边框大小：.radio-check > labe ->left,top  和 .radio-check > label:before->width,height,border
-*/
-.radio-check {
-    position: float;
-	float:left;
-	margin:3px;
-	top:0px;
-	left:0px;
-	//按钮宽度调节选择这里
-	width:12.5%;
-}
-.radio-check-color {
-	position:float;
-	float:left;
-    left: 0px;
-    top: 0px;
-	width:20px;
-	height:20px;
-	border-radius:50%;
-}
-.radio-check > input {
-	margin:0;
-    position:float;
-	float:left;
-    left: 0px;
-    top: 0;
-    width: 0px;
-    height:0px;
-    opacity: 0;
-}
-.radio-check > label {
-    position: relative;
-	//float:left;
-    left: -23px;
-    top: -3px;
-	width:0px;
-	height:0px;
-    line-height: 0px;
-}
-.radio-check > label:before {
-    content: '';
-    position: relative;
-	//float:left;
-    left: 0px;
-    top: 0px;
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    border: 2px solid #ddd;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-}
-/*
-.radio-check > label:after {
-    content: '';
-    position: relative;
-	//float:left;
-    left: 0px;
-    top: 0px;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    //margin-top: 6px;
-    //margin-left: 6px;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-}
-*/
-.radio-check input[type='radio']:checked + label:before {
-    border-color: #000000;
-}
-.radio-check input[type='radio']:checked + label:after {
-    //background: #000000;
-}
 
-</style>
+  <title>ERBG</title>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+  <script>
+      $(document).ready(function(){
+          $('#header').load('header.html');
+          $('#footer').load('footer.html');
+      })
+  </script>
 </head>
-<body class="body page-index clearfix">
-  <div class="container container-1 clearfix">
-    <div class="container container-2 clearfix">
-      <div class="element element-1"></div>
-    </div>
-    <div class="container container-3 clearfix">
-      <div class="element element-2 clearfix">
-        <p class="text text-1">Ѐmbrase</p>
-      </div>
-      <div class="element element-3 clearfix">
-        <p class="text text-2">R.Bottles</p>
-      </div>
-      <div class="element element-4 clearfix">
-        <p class="text text-3">Guâwa</p>
-      </div>
-    </div>
-    <div class="container container-4 clearfix">
-      <div class="element element-5 clearfix">
-        <p class="text text-4">Account</p>
+<body class="body page-indexs clearfix">
+<div id="header" class="nav_container clearfix"></div>
+<div class="container-5 clearfix">
+  <div class="container-6 clearfix">
+    <img class="image image-1" src="images/2018_3_11_1.jpg">
+    <div class="container container-7 clearfix">
+      <div class="container container-8 clearfix">
+        <p class="text text-5">Woman</p>
+        <p class="text text-6">Shop SS18 collection</p>
       </div>
     </div>
   </div>
-  <div class="container container-5 clearfix">
-    <div class="container container-6 clearfix">
-      <img class="image image-1" src="images/2018_3_11_1.jpg">
-      <div class="container container-7 clearfix">
-        <div class="container container-8 clearfix">
-          <p class="text text-5">Woman</p>
-          <p class="text text-6">Shop SS18 collection</p>
-        </div>
-      </div>
-    </div>
-    <div class="container container-9 clearfix">
-      <img class="image" src="images/picture.jpeg">
-    </div>
-    <div class="container container-10 clearfix">
-      <img class="image" src="images/2018_3_11_2.jpg">
-    </div>
-    <div class="container container-11 clearfix">
-      <img class="image" src="images/2018_3_11_3.jpg">
-    </div>
+  <div class="container-9 clearfix">
+    <img class="image" src="images/picture.jpeg">
   </div>
-  <div class="container container-12 clearfix">
-    <div class="container container-13 clearfix">
-      <div class="element element-6 clearfix">
-        <p onClick="window.location='index.html';" class="text text-7">© 2018 ERBG</p>
-      </div>
-    </div>
-    <div class="container container-14 clearfix">
-      <div class="element element-7 clearfix">
-        <p onClick="window.location='index.html';" class="text text-8">Privacy policy</p>
-      </div>
-      <div class="element element-8 clearfix">
-        <p class="text text-9">About us</p>
-      </div>
-    </div>
-    <div class="container container-15"></div>
-    <div class="container container-16"></div>
+  <div class="container-10 clearfix">
+    <img class="image" src="images/2018_3_11_2.jpg">
   </div>
+  <div class="container-11 clearfix">
+    <img class="image" src="images/2018_3_11_3.jpg">
+  </div>
+</div>
+<div id="footer" class="footer_container clearfix"></div>
 </body>
 </html>
