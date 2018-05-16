@@ -1,12 +1,11 @@
 body {
   background-color: rgb(255, 255, 255);
-  font-family: "acne","Helvetica Neue",Helvetica,Arial,sans-serif;
   color: rgb(0, 0, 0);
 }
-
+/*
 .element {
   background-color: #f2f2f2;
-}
+}*/
 
 .element .text {
   text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
@@ -95,7 +94,7 @@ body {
   height: 32px;
 }
 
-.container-5 {
+.picture_list_container {
   position: relative;
   float: left;
   z-index: 23;
@@ -257,6 +256,7 @@ body {
   float: left;
   width: 100%;
   height: 36px;
+  font-family:"acne","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 2.143em;
   color: rgb(0, 0, 0);
 }
@@ -269,10 +269,6 @@ body {
     font-size: inherit;
     font-style: normal;
     font-weight: 400;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-name: flash;
-    animation-timing-function: steps(1);
 }
 
 .text-6 {
@@ -280,13 +276,14 @@ body {
   clear: both;
   width: 100%;
   height: 36px;
+  font-family:"acne","Helvetica Neue",Helvetica,Arial,sans-serif;
   min-height: 35px;
   font-size: 2.143em;
   color: rgb(0, 0, 0);
 }
-
+/*这后面的括号中包含3个特殊字符（）*/
 .text-6::before {
-    content: "";
+    content: "";
 	left: -.75em;
 	font-family: icons;
     font-size: inherit;

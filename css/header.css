@@ -57,6 +57,7 @@ body {
   width: 100%;
   margin-top: 8px;
   text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+  font-family: "acne","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 1em;
   text-align: center;
   color: #1a1a1a;
@@ -79,6 +80,7 @@ body {
   min-height: 18px;
   margin-top: 8px;
   text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+  font-family: "acne","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 1em;
   text-align: center;
   color: #1a1a1a;
@@ -98,6 +100,7 @@ body {
   min-height: 17px;
   margin-top: 8px;
   text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+  font-family: "acne","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 1em;
   text-align: center;
   color: #1a1a1a;
@@ -136,9 +139,25 @@ body {
   float: right;
   width: 90%;
   min-height: 22px;
-  margin: 8px 10% 0 0;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
-  font-size: 1em;
-  text-align: right;
-  color: rgb(0, 0, 0);
+  font-family:"acne","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight:normal;
+  font-size: 14px;
+  text-align: center;
+  color: black;
 }
+
+
+        nav{height: 32px;width: 270px;margin: 0 auto;float: left;}
+        nav ul li{list-style-type:none;float: left;width: 90px;}
+        nav ul li a{ text-decoration: none;display: block;width: 90px;line-height: 32px;text-align: center;
+            color:black;font-family:"acne","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:normal;font-size: 14px;}
+        /*nav ul li a:hover{background-color:#e6e6e6;}*/
+        nav ul li ul li{float: none;background-color:#e6e6e6;width:130px;}
+        nav ul li ul li:hover{background-color:#ffffff;}
+        nav ul li ul li:first-child{margin-bottom:2px;width:90px;}
+        nav ul li ul li:first-child:hover{background-color:#e6e6e6;}
+        nav ul li ul li a{color:black;}
+        /*nav ul li ul li a:hover{background-color:#ffffff;}
+        nav ul li ul li a:first-child:hover{background-color:#e6e6e6;}*/
+        nav ul li ul{display: none;}
+        nav ul li:hover ul{display: block;left:0px;margin-top:-32px;}
