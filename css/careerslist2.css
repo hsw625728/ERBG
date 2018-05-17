@@ -1,0 +1,592 @@
+@font-face {
+    font-family: "helvetica";
+    font-style: normal;
+    font-weight: normal;
+    /*src: local("?"), url("webfonts/Acne/helvetica.otf") format("opentype");*/
+    src: url("webfonts/Acne/helvetica.eot");
+    src: url('lwebfonts/Acne/helvetica.eot#iefix') format('embedded-opentype'),
+    url('webfonts/Acne/helvetica.woff') format('woff'),
+    url('webfonts/Acne/helvetica.ttf') format('truetype'),
+    url('webfonts/Acne/helvetica.svg#Name') format('svg');
+}
+
+
+body {
+    color: #000;
+    font-family: helvetica, Georgia,Serif;
+    font-size: 13px;
+    line-height: normal;
+    width:100%;
+    float:none;
+    margin: 0px auto;
+}
+
+body#popup
+{
+    width: 90%;
+}
+
+.jobApplyContainer
+{
+    width:70%;
+    float:none;
+    margin: 0px auto;
+}
+
+#r_wrapper {
+    width:100%;
+    background: url("http://site103.reachmee.com/Admin/images/mwextstorage/RM474/image_bank/Acne Studios_logo.png") no-repeat scroll;
+    background-position: center top;
+    margin-top:20px;
+
+}
+
+.container
+{
+    max-width: 100%;
+    padding: 0px;
+    padding-top: 90px;
+}
+
+/*Rubrik*/
+.welcome h1 {
+    font-family:helvetica, Georgia,Serif;
+    line-height: normal;
+    /*margin-bottom: 20px;*/
+    margin-top: 0;
+    color: #000;
+    font-size: 14px;
+
+}
+
+H1, H2
+{
+    font-weight: bold !important;
+}
+
+.welcome h1 > span
+{
+    font-family: helvetica, Georgia,Serif;
+    line-height: 21px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: #000;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+h3#errortitle,  .control h2, h3.profileHeader
+{
+    font-family: helvetica, Georgia,Serif;
+
+}
+
+
+/*Texter: BrÃ¶dtext, Annonstext, AnsÃ¶kningsformulÃ¤r*/
+.jobDescription, .AGintro > p, .welcome > p, .jobDescription p, p.app-label, span.underbutton, .jobDescription strong, .jobDescription p > strong, .jobDescription p > a, .popupBox > h4 > a, .jobDescription li, .prefixtext, p, em,  .rm_contact_person, .rm_contact_name, .rm_contact_pos, .rm_contact_phone, .rm_contact_email,
+.profileEditItem p, .user-info dl dt, .control p, #fancybox-content form > select, .control input[type="text"], .control input[type="password"], .control input[type="email"], .appbox1 input.appinput, select.birth-year, select.appinput,
+.profileEditItem > p > span, .appbox3 .q-checkbox > p.q-label, .q-checkbox > p.q-label:first-child, .popupBoxMenu p, .popupBoxMenu select, .question-graded .qGradTitle, table.question-graded, select
+{
+    color: #000;
+    font-family: helvetica, Georgia,Serif;
+    font-size: 13px;
+    line-height: normal;
+}
+
+.prefixtext, .sufixtext
+{
+    font-style: italic;
+}
+
+.prefixtext
+{
+    padding-bottom: 20px;
+}
+.jobDescription p, .jobDescription ul, .rm_contact_person
+{
+    margin-bottom: 15px;
+}
+
+.jobDescription ul
+{
+    padding-left: 15px;
+}
+
+.jobDescription li
+{
+    list-style-position:outside;
+}
+
+
+.appbox1 h3, .appbox2 h3, .appbox3 h3, .profileEditItem > h4
+{
+
+    margin-bottom: 5px;
+    color: #000;
+    font-family: helvetica, Georgia,Serif;
+    font-size: 13px;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.appbox2 > div
+{
+    border: none;
+}
+
+.q-checkbox > p.q-label, .appbox3 > p.q-label, span.underbutton
+{
+    color: #000;
+    font-family: helvetica, Georgia,Serif;
+    font-size: 13px;
+}
+
+.profilel, .profilel span, .profilel a ,  .popupBox a.itemDel, .popupBox > h4{
+    font-weight: normal;
+    color: #000;
+    font-family: helvetica, Georgia,Serif;
+}
+
+#profile h2
+{
+    padding-top: 20px;
+}
+
+.rm_contact_person p
+{
+    margin-bottom: 0px;
+}
+
+.filterbox
+{
+    width: 90%;
+    border: none;
+}
+
+.filterItemsTags, .filterItemsSelect
+{
+    width: 90%;
+}
+
+
+.jobDescription
+{
+    margin-bottom: 90px;
+}
+
+/*LÃ¤nkar*/
+.jobDescription p > a, .popupBox > h4 > a, a.button-link, .feature-list a, .control p.feature-list,.user-info a, h1 a, .profilel a, p.conditions:hover, #loginform h2 a
+{
+    color: #ccc;
+    font-size: 13px;
+    font-family: helvetica, Georgia,Serif;
+    cursor:pointer;
+}
+
+.jobDescription p > a:hover, .popupBox > h4 > a:hover, a.button-link:hover, .feature-list a:hover, .control p.feature-list:hover,.user-info a:hover, h1 a:hover, .profilel a:hover, p.conditions
+{
+    text-decoration:underline;
+}
+
+.profilel a
+{
+    color: #000;
+    font-size: 13px;
+    font-family: helvetica, Georgia,Serif;
+    font-weight: bold;
+}
+
+.profilel
+{
+    padding-top: 10px;
+}
+
+.profilel span
+{
+    color: #fff;
+}
+
+
+/*Ikoner*/
+.icon-signin:before, .icon-user:before
+{
+    display: none !important;
+}
+
+
+/*Jobblista*/
+.joblist thead th
+{
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-family: helvetica, Georgia,Serif;
+    font-weight: bold;
+    height: 30px;
+
+    border: none;
+    padding-right: 5px;
+    border-bottom: 2px solid #c0c0c0;
+}
+
+.joblist tbody
+{
+
+}
+
+
+.joblist table
+{
+    border-top: none;
+    width:100%;
+}
+
+
+tr.jobs>td
+{
+    color: #000;
+    font-family: Helvetica;
+    font-size: 13px;
+    font-weight: normal;
+    line-height:normal;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    /*	Background-Color: #DFDAD1*/
+}
+
+.joblist a
+{
+    font-size: 13px;
+    font-family: helvetica, Georgia,Serif;
+    color: #000;
+    font-weight: normal;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+tr.jobs:hover
+{
+
+    cursor: pointer;
+}
+
+.joblist a:hover
+{
+    text-decoration: none;
+}
+
+tr.even
+{
+
+}
+
+tr.even:hover
+{
+
+}
+
+/*Knappar*/
+.addbutton, a.button, .fbutton, .sub-btn, .button-med, .button-big,
+.control .button-med,  #applApply
+
+{
+    color: #000;
+    background-color: #fff;
+    border: none;
+    font-family: helvetica, Georgia,Serif;
+    font-size: 13px;
+    font-weight: normal;
+    border-radius: 0px;
+    line-height: 25px;
+}
+
+#pwd-sent
+{
+    color: #000;
+    background-color: #555;
+}
+
+.addbutton:hover, a.button:hover, .fbutton:hover, .sub-btn:hover, .button-med:hover,
+#pwd-sent:hover, .button-big:hover, .control .button-med:hover,
+a.button span:hover, #applApply:hover
+{
+
+    box-shadow: none;
+    text-decoration:none;
+
+}
+
+.control .button-med, .popupBox .button-med
+{
+
+    border:none;
+    margin-right:2px;
+    border-radius: 0px;
+    box-shadow:none;
+}
+
+a.button span, .addbutton span, .genapply a
+{
+
+
+    color: #000;
+    font-weight: normal;
+    font-family: helvetica, Georgia,Serif;
+    font-size: 13px;
+}
+
+.button-big
+{
+    height:28px;
+    border:none;
+}
+
+.btn-mail .label
+{
+    line-height: normal;
+}
+
+.btn-mail .label
+{
+    padding-top: 4px;
+}
+
+#errorbox .control h3
+{
+    color: red;
+}
+
+#login-cnl
+{
+    float:left;
+}
+
+.popupBox > h4 > a.pcbmShow, .popupBox > h4 > a.pabmShow, .button-med[value="Add"]
+{
+    background:url(http://site103.reachmee.com/Admin/images/mwextstorage/RM474/image_bank/knappliten.png) no-repeat transparent;
+    background-position: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: #000;
+    font-size: 13px;
+}
+
+.popupBox > h4 > a.pcbmShow:hover, .popupBox > h4 > a.pabmShow:hover
+{
+    text-decoration: none;
+}
+
+#li_ui_li_gen_1396455704169_0 #li_ui_li_gen_1396455704169_0-title
+{
+    display:none;
+}
+
+
+/*Knappar jobblistan*/
+.genapply
+{
+    float: right;
+}
+
+/*Knappar login fÃ¶nster*/
+#login-btn
+{
+    background-color: #555555;
+    color: #fff;
+    float: right;
+    margin-right: 20px;
+}
+
+a.apply span, .button-med[value="Send"], #applApply, .button-med[value="Save"]
+{
+    color: #fff !important;
+    background-color: #555555;
+}
+
+.button-med[value="Sign Up"], .button-med[value="Subscribe"], a.apply
+{
+    position: absolute;
+    right: 38px;
+    background-color: #555555;
+    color: #fff !important;
+}
+
+#subs-cnl[value="Cancel"]
+{
+    position: absolute;
+    left: 10px;
+    color: #000;
+}
+
+#error-cnl
+{
+    margin-right: 0px;
+    color: #000;
+}
+
+.jobDescFeatureBox
+{
+    position: absolute;
+    bottom: 60px;
+
+}
+
+.btn-mail
+{
+    padding-bottom: 1px;
+}
+
+
+/*AnsÃ¶kningsformulÃ¤r*/
+.question-graded .qGradItem {
+    text-align: center;
+    width: 50px;
+}
+
+table.question-graded
+{
+    width: 100%;
+}
+
+
+/*Boxar*/
+#loginbox .control, #subscribebox .control , #errorbox .control
+{
+    background-color: #FFF;
+}
+
+.tipmsg
+{
+    background-color: #Fff;
+}
+
+/*Streck som finns i boxar*/
+.control form, h3.profileHeader, h2.invitationHeader, h2.assessmentHeader, .simplyMsgBox > h3, .control h2, h3#errortitle
+{
+    border-bottom-color: #fff;
+}
+
+#loginbox .control
+{
+    height: 470px;
+}
+
+#subscribebox .control
+{
+    height: 140px;
+}
+
+.jobitem
+{
+    width: 50%;
+}
+
+.jobtown
+{
+    width: 17.5%;
+}
+
+.orgunit1
+{
+    width: 15%;
+}
+
+tr.jobs > td.publishto
+{
+    text-align: left;
+}
+
+
+#loginform
+{
+    padding-bottom: 20px;
+}
+
+/*AnsÃ¶kningsformulÃ¤r*/
+input.appinput, input#prof_personalnumber, input#prof_birthlastfour, select#gender, select#prof_birthyear, select#countrycode, input#subscribe-email, select#subscribe-frequency, .control input, control input[type="text"]
+{
+    border-radius: 0px;
+    /*height: 30px !important;*/
+    border-radius: 0px;
+    border: 1px solid #CCC;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    margin-bottom: 10px;
+}
+
+input
+{
+
+}
+
+#subscribe-frequency, select#gender, select#prof_birthyear, select#countrycode,  select#prof_birthmonth,  select#prof_birthday, select#prefcareer, select#prefcareerorient,
+select#prefposition, select#np_prefcountry, select#np_prefcounty, select#np_preftown
+{
+    background:url(http://site103.reachmee.com/Admin/images/mwextstorage/RM474/image_bank/dropdown.jpg) right center no-repeat transparent;
+    border:none !important;
+    width: 195px;
+    height: 20px;
+}
+
+select.prof-field
+{
+    background:url(http://site103.reachmee.com/Admin/images/mwextstorage/RM474/image_bank/dropdown.jpg) left center no-repeat transparent;
+    border:none !important;
+    width: 195px;
+    height: 20px;
+}
+
+select#prof_birthyear, select#prof_birthmonth,  select#prof_birthday
+{
+    background:url(http://site103.reachmee.com/Admin/images/mwextstorage/RM474/image_bank/dropdownbirth.jpg) right center no-repeat transparent;
+    border:none !important;
+    width: 80px;
+}
+
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    padding:2px;
+}
+
+select::-ms-expand
+{
+    display:none;
+}
+
+
+.conditionsBox
+{
+    height: 60px;
+    border: none;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.conditionsAccept
+{
+    background-color: #fff;
+    border:none;
+}
+
+.welcome .profile, .profileEditItem
+{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+h3.profileHeader
+{
+    border-bottom: 2px solid #c0c0c0;
+}
+
+.alerts-list .alert-item-calendar a
+{
+    color: #000;
+    text-decoration: underline;
+}

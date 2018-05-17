@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="ERBG">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="css/standardize.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/fonts.min.css">
+    <link rel="stylesheet" href="css/careerslist.css">
+    <link rel="stylesheet" href="css/careerslist2.css">
+    <link rel="stylesheet" href="css/careers.css">
+
+    <title></title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#header').load('header.html');
+            $('#footer').load('footer.html');
+            $('#careerslist').load('careerslist.html')
+        })
+    </script>
+</head>
+<body>
+<div id="header" class="nav_container clearfix"></div>
+<div id="content" style="margin-top: 32px;">
+    <div id="logo"><img class="erbg_500" src="images/logo_500.png"></div>
+    <div id="careerslist"></div>
+</div>
+<div id="footer" class="footer_container clearfix"></div>
+</body>
+</html>
