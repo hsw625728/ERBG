@@ -34,5 +34,42 @@ body{
 }
 
 .erbg_500{
-    width:500px;
+    width:300px;
+}
+
+.career_detail{
+    margin: auto;
+    text-align:left;
+    width:800px;
+    margin-bottom:50px;
+}
+
+.career_detail h1{
+    font-family: "幼圆",helvetica, Georgia,Serif;
+    line-height: normal;
+    /* margin-bottom: 20px; */
+    margin-top: 30px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold !important;
+    margin-bottom: 15px;
+}
+
+.career_detail p{
+    margin: 0 0 5px;
+    padding: 0;
+    color: #000;
+    font-family: "幼圆",helvetica, Georgia,Serif;
+    font-size: 14px;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.disc li{
+    list-style-type: disc;
+    list-style-position: inside;
+    color: #000;
+    font-family: "幼圆",helvetica, Georgia,Serif;
+    font-size: 14px;
+    line-height: normal;
 }
