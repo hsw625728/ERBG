@@ -1,134 +1,47 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <meta name="description" content="">
+  <meta name="author" content="ERBG">
   <title>login</title>
+  <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="css/standardize.css">
-  <link rel="stylesheet" href="css/login-grid.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/fonts.min.css">
   <link rel="stylesheet" href="css/login.css">
-  <style>
-/*
-*修改说明：
-*修改按钮间距：.radio-check->width
-*修改按钮大小：.radio-check-color->width,height
-*修改按钮形状：.radio-check-color->border-radius
-*修改按钮选择边框大小：.radio-check > labe ->left,top  和 .radio-check > label:before->width,height,border
-*/
-.radio-check {
-    position: float;
-	float:left;
-	margin:3px;
-	top:0px;
-	left:0px;
-	//按钮宽度调节选择这里
-	width:12.5%;
-}
-.radio-check-color {
-	position:float;
-	float:left;
-    left: 0px;
-    top: 0px;
-	width:20px;
-	height:20px;
-	border-radius:50%;
-}
-.radio-check > input {
-	margin:0;
-    position:float;
-	float:left;
-    left: 0px;
-    top: 0;
-    width: 0px;
-    height:0px;
-    opacity: 0;
-}
-.radio-check > label {
-    position: relative;
-	//float:left;
-    left: -23px;
-    top: -3px;
-	width:0px;
-	height:0px;
-    line-height: 0px;
-}
-.radio-check > label:before {
-    content: '';
-    position: relative;
-	//float:left;
-    left: 0px;
-    top: 0px;
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    border: 2px solid #ddd;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-}
-/*
-.radio-check > label:after {
-    content: '';
-    position: relative;
-	//float:left;
-    left: 0px;
-    top: 0px;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    //margin-top: 6px;
-    //margin-left: 6px;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-}
-*/
-.radio-check input[type='radio']:checked + label:before {
-    border-color: #000000;
-}
-.radio-check input[type='radio']:checked + label:after {
-    //background: #000000;
-}
 
-</style>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+  <srcipt src="../js/login.js"></srcipt>
+  <script>
+      $(document).ready(function(){
+          $('#header').load('header.html');
+          $('#footer').load('footer.html');
+      })
+  </script>
+
 </head>
 <body class="body page-login clearfix">
-  <div class="container container-1 clearfix">
-    <div class="container container-2 clearfix">
-      <div class="element _element"></div>
-    </div>
-    <div class="container container-3 clearfix">
-      <div class="element element-2 clearfix">
-        <p class="text text-1">Ѐmbrase</p>
-      </div>
-      <div class="element element-3 clearfix">
-        <p class="text text-2">R.Bottles</p>
-      </div>
-      <div class="element element-4 clearfix">
-        <p class="text text-3">Guâwa</p>
-      </div>
-    </div>
-    <div class="container container-4 clearfix">
-      <div class="element element-5 clearfix">
-        <p class="text text-4">Account</p>
-      </div>
-    </div>
-  </div>
+<div id="header" class="nav_container clearfix"></div>
   <div class="container container-5 clearfix">
     <div class="container container-6 clearfix">
       <p class="text text-5">Login or create an account</p>
-      <p class="text text-6">Email address *</p>
-      <input class="_input" type="text">
-      <p class="text text-7">Password *</p>
-      <p class="text text-8">Forgot your password?</p>
-      <input class="_input" type="text">
-      <button class="_button _button-1">Sign in</button>
-      <label class="checkbox-label clearfix">
-        <input class="checkbox" type="checkbox">
-        <span class="point-text">Remember me</span>
-      </label>
+      <form action="http://mengyoutu.cn/erbg/login.php" method="POST" name="loginform" onsubmit="return init();">
+        <p class="text text-6">Email address *</p>
+        <input class="_input" type="text" name="username" placeholder="请输入用户名">
+        <p class="text text-7">Password *</p>
+        <p class="text text-8">Forgot your password?</p>
+        <input class="_input" type="password" name="password" placeholder="请输入密码">
+        <input class="_button _button-1" type="submit" value="Sign in" name="loginsubmit"></input>
+        <label class="checkbox-label clearfix">
+          <input class="checkbox" type="checkbox" name="rememberme">
+          <span class="point-text">Remember me</span>
+        </label>
+      </form>
       <p class="text text-9">Login with:</p>
       <button class="_button _button-2">Wechat</button>
       <button class="_button _button-3">Weibo</button>
@@ -139,13 +52,15 @@
       <div class="wrapper wrapper-2"><hr /></div>
       <p class="text text-12">Order status / Request a Return or Exchange</p>
       <p class="text text-13">Track your order or&nbsp;request a return/exchange even if you are not a registered user. Enter the order number and the billing address zip code.</p>
-      <p class="text text-14">Order number *</p>
-      <input class="_input" type="text">
-      <p class="text text-15">Order email *</p>
-      <input class="_input" type="text">
-      <p class="text text-16">Billing zip code</p>
-      <input class="_input" type="text">
-      <button class="_button _button-5">Submit</button>
+      <form action="http://mengyoutu.cn/erbg/register.php" method="POST">
+        <p class="text text-14">Order number *</p>
+        <input class="_input" type="text" name="username">
+        <p class="text text-15">Order email *</p>
+        <input class="_input" type="text" name="password">
+        <p class="text text-16">Billing zip code</p>
+        <input class="_input" type="text" name="confirm">
+        <input class="_button _button-5" type="submit" value="Register" name="registersubmit"></input>
+      </form>
       <div class="wrapper wrapper-3"><hr /></div>
       <div class="container container-7 clearfix">
         <p class="text text-17">Need help?</p>
@@ -155,5 +70,6 @@
       </div>
     </div>
   </div>
+<div id="footer" class="footer_container clearfix"></div>
 </body>
 </html>
