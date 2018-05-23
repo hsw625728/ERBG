@@ -35,3 +35,9 @@ body{
 .erbg_500{
     width:500px;
 }
+
+@media(max-width: 500px) {
+    .erbg_500{
+        width:50%;
+    }
+}

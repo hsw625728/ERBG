@@ -40,7 +40,7 @@ body{
 .career_detail{
     margin: auto;
     text-align:left;
-    width:800px;
+    width:80%;/*800px*/
     margin-bottom:50px;
 }
 

@@ -1,16 +1,3 @@
-@font-face {
-    font-family: "helvetica";
-    font-style: normal;
-    font-weight: normal;
-    /*src: local("?"), url("webfonts/Acne/helvetica.otf") format("opentype");*/
-    src: url("webfonts/Acne/helvetica.eot");
-    src: url('lwebfonts/Acne/helvetica.eot#iefix') format('embedded-opentype'),
-    url('webfonts/Acne/helvetica.woff') format('woff'),
-    url('webfonts/Acne/helvetica.ttf') format('truetype'),
-    url('webfonts/Acne/helvetica.svg#Name') format('svg');
-}
-
-
 body {
     color: #000;
     font-family: helvetica, Georgia,Serif;
@@ -35,7 +22,6 @@ body#popup
 
 #r_wrapper {
     width:100%;
-    background: url("http://site103.reachmee.com/Admin/images/mwextstorage/RM474/image_bank/Acne Studios_logo.png") no-repeat scroll;
     background-position: center top;
     margin-top:20px;
 
@@ -362,7 +348,6 @@ a.button span, .addbutton span, .genapply a
 
 .popupBox > h4 > a.pcbmShow, .popupBox > h4 > a.pabmShow, .button-med[value="Add"]
 {
-    background:url(http://site103.reachmee.com/Admin/images/mwextstorage/RM474/image_bank/knappliten.png) no-repeat transparent;
     background-position: center;
     padding-left: 10px;
     padding-right: 10px;
@@ -522,7 +507,6 @@ input
 #subscribe-frequency, select#gender, select#prof_birthyear, select#countrycode,  select#prof_birthmonth,  select#prof_birthday, select#prefcareer, select#prefcareerorient,
 select#prefposition, select#np_prefcountry, select#np_prefcounty, select#np_preftown
 {
-    background:url(http://site103.reachmee.com/Admin/images/mwextstorage/RM474/image_bank/dropdown.jpg) right center no-repeat transparent;
     border:none !important;
     width: 195px;
     height: 20px;
@@ -530,7 +514,6 @@ select#prefposition, select#np_prefcountry, select#np_prefcounty, select#np_pref
 
 select.prof-field
 {
-    background:url(http://site103.reachmee.com/Admin/images/mwextstorage/RM474/image_bank/dropdown.jpg) left center no-repeat transparent;
     border:none !important;
     width: 195px;
     height: 20px;
@@ -538,7 +521,6 @@ select.prof-field
 
 select#prof_birthyear, select#prof_birthmonth,  select#prof_birthday
 {
-    background:url(http://site103.reachmee.com/Admin/images/mwextstorage/RM474/image_bank/dropdownbirth.jpg) right center no-repeat transparent;
     border:none !important;
     width: 80px;
 }

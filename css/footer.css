@@ -5,69 +5,106 @@ body {
 }
 
 .footer_container {
-  position: relative;
-  float: right;
+  float: left;
+  width: 100%;
   height: 58px;
+  background-color: #f2f2f2;
 }
 
 .footer_copyright_container {
   float: left;
   width: 137px;
-  height: 58px;
+  height: 34px;
 }
 
-.footer_container,
+.footer_beian_container {
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 24px;
+}
+
 .footer_copyright_item {
   float: left;
   width: 100%;
-  height: 58px;
+  line-height: 34px;
   background-color: #f2f2f2;
+}
+
+.footer_info_container {
+  float: left;
+  width: 100%;
+  height: 34px;
 }
 
 .footer_menu_container {
   float: left;
   width: 265px;
-  height: 58px;
-}
-
-.footer_menu_item1,
-.footer_menu_item2 {
-  float: left;
-  width: 50%;
-  height: 58px;
-  background-color: #f2f2f2;
+  height: 34px;
 }
 
 .footer_copyright_item_text,
-.footer_menu_item1_text,
-.footer_menu_item2_text {
+.footer_menu_item1_text {
+  display: block;
   float: left;
   width: 100%;
+  line-height: 34px;
   min-height: 24px;
-  margin-top: 16px;
   text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
   font-size: 1em;
   text-align: center;
   color: rgb(0, 0, 0);
 }
 
-@media(max-width: 1020px) {
-  .footer_container .container {
-    position: relative;
-  }
+.footer_menu_item1,
+.footer_menu_item2 {
+  float: left;
+  width: 50%;
+  height: 34px;
+  background-color: #f2f2f2;
+}
 
-  .footer_copyright_container .footer_copyright_item {
-    width: 93.4589299171%;
-  }
+.footer_menu_item2_text {
+  float: left;
+  width: 100%;
+  line-height: 34px;
+  min-height: 24px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+  font-size: 1em;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.footer_beian_container_href {
+  display: block;
+  width: 300px;
+  height: 24px;
+  min-height: 5px;
+  margin: 0 auto;
+  font-size: 1em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(0, 0, 0);
 }
 
 @media(max-width: 770px) {
   body {
     font-size: 0.875em;
   }
+}
 
-  .footer_container .container {
-    display: none;
-    position: relative;
+@media(max-width: 415px) {
+  .footer_info_container .footer_copyright_container {
+    width: 33%;
+  }
+
+  .footer_info_container .footer_menu_container {
+    width: 67%;
+  }
+}
+
+@media(max-width: 320px) {
+  body {
+    font-size: 0.875em;
   }
 }
