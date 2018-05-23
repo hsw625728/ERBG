@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="ERBG">
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="css/standardize.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/fonts.min.css">
+    <link rel="stylesheet" href="css/addrecruitment.css">
+
+
+    <title>添加招聘职位</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#header').load('header.html');
+            $('#footer').load('footer.html');
+        })
+    </script>
+</head>
+<body>
+<div id="header" class="nav_container clearfix"></div>
+<div id="content">
+    <form action="http://mengyoutu.cn/erbg/addrecruitment.php" method="POST" name="addrecruitmenetform">
+        <div>
+            <span>职位名称：</span>
+            <span><input type="text" class="textinput" name="title" placeholder="请输入职位名称（必填）"/> </span>
+        </div>
+        <div>
+            <span>工作地点：</span>
+            <span><input type="text" class="textinput" name="location" placeholder="请输入工作地点（选填）"/> </span>
+        </div>
+        <div>
+            <span>隶属部门：</span>
+            <span>
+                <input type="text" list="department" name="department" placeholder="请输入隶属部门（选填）"/>
+                <datalist id="department">
+                    <option value="市场部">
+                    <option value="研发部">
+                    <option value="管理部">
+                    <option value="物流部">
+                    <option value="仓储部">
+                    <option value="质检部">
+                    <option value="销售部">
+                    <option value="财务部">
+                    <option value="客服部">
+                    <option value="电商部">
+                    <option value="公关部">
+                </datalist>
+            </span>
+        </div>
+        <div>
+            <span>截止时间：</span>
+            <span><input type="text" name="deadline" placeholder="请输入截止时间（选填）"/> </span>
+        </div>
+        <div>
+            <span>职位描述：</span>
+            <span><input type="text" name="description" placeholder="请输入职位描述（选填）"/> </span>
+        </div>
+        <div>
+            <span>薪酬工资：</span>
+            <span><input type="text" name="salary" placeholder="请输入薪酬工资（选填）"/> </span>
+        </div>
+        <div>
+            <span>岗位要求：</span>
+            <span><input type="text" name="jobdescription" placeholder="请输入岗位要求（选填）"/> </span>
+        </div>
+        <div>
+            <span>入职要求：</span>
+            <span><input type="text" name="jobqualification" placeholder="请输入入职要求（选填）"/> </span>
+        </div>
+        <div>
+            <span>其他补充：</span>
+            <span><input type="text" name="otherdescription" placeholder="请输入其他补充（选填）"/> </span>
+        </div>
+        <div>
+            <span>电子邮件：</span>
+            <span><input type="text" name="email" placeholder="请输入电子邮件（选填）"/> </span>
+        </div>
+        <div>
+            <span>招聘电话：</span>
+            <span><input type="text" name="telephone" placeholder="请输入招聘电话（选填）"/> </span>
+        </div>
+        <div>
+            <span><input type="submit" name="submit" value="submit"/></span>
+        </div>
+    </form>
+</div>
+<div id="footer" class="footer_container clearfix"></div>
+</body>
+</html>
