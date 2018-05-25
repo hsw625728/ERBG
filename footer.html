@@ -1,18 +1,72 @@
     <div class="footer_info_container clearfix">
-      <div class="footer_copyright_container clearfix">
+      <div class="footer_info_title_container clearfix">
+        <p id="showbtn" class="footer_info_title_text">信息</p>
+      </div>
+      <div class="footer_copyright_container iup clearfix">
         <div class="footer_copyright_item clearfix">
           <a href="index.html" class="footer_copyright_item_text">© 2018 ERBG</a>
         </div>
       </div>
-      <div class="footer_menu_container clearfix">
-        <div class="footer_menu_item1 clearfix">
-          <a href="index.html" class="footer_menu_item1_text">Privacy policy</a>
+      <div class="footer_left_menu_container iup clearfix">
+        <div class="footer_left_menu_item1 clearfix">
+          <a href="infoterms.html" class="footer_left_menu_item1_text">使用条款</a>
         </div>
-        <div class="footer_menu_item2 clearfix">
-          <div class="footer_menu_item2_text">About us</div>
+        <div class="footer_left_menu_item2 clearfix">
+          <a href="infoprivacy.html" class="footer_left_menu_item2_text">隐私政策</a>
+        </div>
+        <div class="footer_left_menu_item3 clearfix">
+          <a href="infocookies.html" class="footer_left_menu_item3_text">Cookies</a>
+        </div>
+      </div>
+      <div class="footer_right_menu_container iup clearfix">
+        <div class="footer_right_menu_item1 clearfix">
+          <a href="infoaboutus.html" class="footer_right_menu_item1_text">关于我们</a>
+        </div>
+        <div class="footer_right_menu_item2 clearfix">
+          <a href="infocsr.html" class="footer_right_menu_item2_text">社会责任</a>
+        </div>
+        <div class="footer_right_menu_item3 clearfix">
+          <a href="infocontact.html" class="footer_right_menu_item3_text">联系我们</a>
+        </div>
+        <div class="footer_right_menu_item4 clearfix">
+          <a href="infostorelocation.html" class="footer_right_menu_item4_text">店铺位置</a>
+        </div>
+        <div class="footer_right_menu_item5 clearfix">
+          <a href="infofaq.html" class="footer_right_menu_item5_text">常见问题</a>
+        </div>
+        <div class="footer_right_menu_item6 clearfix">
+          <a href="infosizeguide.html" class="footer_right_menu_item6_text">尺码指南</a>
+        </div>
+        <div class="footer_right_menu_item7 clearfix">
+          <a href="inforeturnexchange.html" class="footer_right_menu_item7_text">退换服务</a>
         </div>
       </div>
     </div>
     <div class="footer_beian_container clearfix">
-      <a href="http://www.miitbeian.gov.cn" class="footer_beian_container_href">沪ICP备18019318号-1</a>
+      <div class="footer_beian_item_container clearfix">
+        <div class="footer_beian_copyright">
+            <a href="index.html" class="footer_beian_copyright_text">© 2018 ERBG 上海易八服饰有限公司</a>
+        </div>
+          <div class="footer_beian_number">
+              <a href="http://www.miitbeian.gov.cn" class="footer_beian_container_href">沪ICP备18019318号-1</a>
+          </div>
+          <div class="footer_beian_sns"></div>
     </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#showbtn").toggle(
+                function () {
+                    $('.iup').show();
+                    var h = $(document).height()-$(window).height();
+                    $(document).scrollTop(h);
+                },
+                function () {
+                    $('.iup').hide();
+                    var h = $(document).height()-$(window).height();
+                    $(document).scrollTop(h);
+                }
+            );
+        })
+
+    </script>
