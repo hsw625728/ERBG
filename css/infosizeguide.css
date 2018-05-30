@@ -31,7 +31,8 @@ body{
 
 .information_right_main {
     float: left;
-    width: 50%;
+    width: 70%;
+    min-width: 577px;
     height: auto;
     padding-top: 70px;
     padding-left: 24px;
@@ -97,6 +98,24 @@ body{
     float: right;
     width: 75%;
     background-color: #f8f8f8;
+}
+
+.information_right_main_title {
+    font-size: 2em;
+}
+
+.information_right_main_table_container {
+    margin-bottom: 20px;
+}
+
+.information_right_main_section_title {
+    border-style: solid;
+    border-width: 0 0 1px;
+    border-color: rgb(0, 0, 0);
+}
+
+.information_right_main_table {
+    width: 100%;
 }
 
 @media(max-width: 770px) {
