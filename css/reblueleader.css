@@ -1,0 +1,240 @@
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #f9f9f9;
+}
+/*以下三个式样保证header在顶部 footer在底部 中间留白*/
+#header{
+    /* 我们希望 header 采用固定的高度，只占用必须的空间 */
+    /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 0 0 auto;
+}
+
+#content{
+    /* 将 flex-grow 设置为1，该元素会占用全部可使用空间
+       而其他元素该属性值为0，因此不会得到多余的空间*/
+    /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 1 0 auto;
+    margin-top: 32px;
+    height:auto;
+}
+
+#footer{
+    /* 和 header 一样，footer 也采用固定高度*/
+    /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 0 0 auto;
+}
+
+.leader_find_container {
+    float: left;
+    clear: both;
+    width: 100%;
+    height: auto;
+}
+
+.leader_find_left_container {
+    float: left;
+    width: 40%;
+    height: auto;
+    margin-left: 10%;
+}
+
+.leader_find_left_title {
+    color: #578d3f;
+    font-size: 2em;
+}
+
+.leader_find_left_body ul li {
+    font-size: 1.5em;
+    list-style-type: disc;
+    list-style-position: outside;
+    color: #6f6e6e;
+}
+
+.leader_find_left_picture1 {
+    position: absolute;
+    width: 300px;
+    left: -60px;
+    top: 500px;
+}
+
+.leader_find_left_picture2 {
+    position: absolute;
+    width: 300px;
+    left: 100px;
+    top: 550px;
+}
+
+.leader_find_right_container {
+    float: right;
+    margin-right: 5%;
+    margin-top: 70px;
+    width: 40%;
+    height: auto;
+}
+
+.leader_find_right_title {
+    color: #578d3f;
+    font-size: 2em;
+    text-align: center;
+}
+
+.leader_find_right_picture1 {
+    float: left;
+    margin-left: 10px;
+    margin-top: 100px;
+    width: 300px;
+    heigth: auto;
+}
+
+.leader_ambi_container {
+    float: left;
+    clear: both;
+    width: 100%;
+    height: auto;
+    margin-top: 200px;
+}
+
+.leader_ambi_left_container {
+    float: left;
+    width: 45%;
+    margin-left: 5%;
+    height: auto;
+}
+
+.leader_ambi_left_title {
+    color: #578d3f;
+    font-size: 2em;
+}
+
+.leader_ambi_left_container ul li {
+    font-size: 1.5em;
+    list-style-type: disc;
+    list-style-position: outside;
+    color: #6f6e6e;
+}
+
+.leader_ambi_left_brief ul li {
+    font-size: 2em;
+    list-style-type: none;
+    color: #578d3f;
+}
+
+.leader_ambi_right_container {
+    float: right;
+    width: 44%;
+    height: auto;
+    margin-right: 5%;
+}
+
+.leader_ambi_right_picture1 {
+    float: left;
+    margin-top: 100px;
+    width: 450px;
+    height: auto;
+}
+
+@font-face {
+    font-family:"DWANCI+AmericanTypewriter-Bold";
+    src:url("../fonts/4666f0bc-0000-0000-0000-000000000000.woff") format("woff");
+}
+
+.leader_title {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.leader_title1 {
+    font-size: 4.1em;
+    line-height: 2em;
+    text-align: center;
+    font-family: "DWANCI+AmericanTypewriter-Bold";
+    color: #549FCB;
+}
+
+.leader_title2 {
+    font-size: 2.1em;
+    line-height: 2em;
+    text-align: center;
+    font-family: "Times New Roman";
+    letter-spacing: 0.3em;
+    color: #444444;
+}
+
+.leader_title_container {
+    float: left;
+    width: 100%;
+}
+
+@media(max-width: 770px) {
+    .leader_ambi_container .leader_ambi_left_container,
+    .leader_find_container ,
+    .leader_find_container {
+        width: 100%;
+    }
+
+    .leader_find_left_container {
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .leader_find_left_body ul li {
+        margin-left: 5%;
+        list-style-position: outside;
+        font-size: 1.3em;
+    }
+
+    .leader_find_left_picture2 {
+        left: 100px;
+        top: 530px;
+    }
+
+    .leader_find_right_container {
+        margin-left: 5%;
+        margin-top: 350px;
+        width: 90%;
+    }
+
+    .leader_find_right_picture1 {
+        margin-top: 10px;
+    }
+
+    .leader_ambi_container {
+        margin-left: 5%;
+        margin-top: 50px;
+        width: 90%;
+    }
+
+    .leader_ambi_left_body ul li {
+        margin-left: 5%;
+        list-style-position: outside;
+        font-size: 1.3em;
+    }
+
+    .leader_ambi_left_brief {
+        margin-top: 50px;
+    }
+
+    .leader_ambi_left_brief ul li {
+        font-size: 1.6em;
+    }
+
+    .leader_ambi_right_container {
+        float: right;
+        width: 90%;
+        height: auto;
+        margin-right: 5%;
+    }
+
+    .leader_ambi_right_picture1 {
+        float: left;
+        width: 350px;
+        height: auto;
+    }
+}
