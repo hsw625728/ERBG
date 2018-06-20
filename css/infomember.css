@@ -110,11 +110,12 @@ body{
 .information_right_main_section_title {
     text-decoration: underline;
     font-size: 1.1em;
+    margin-top: 20px;
 }
 
 .information_right_main_section_body {
-    margin-left: -20px;
-    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
     text-indent: 2em;
     text-align: justify;
 }
@@ -126,6 +127,16 @@ ol li {
 ul li {
     list-style:none;
 }
+
+ul.information_right_main_section_ul li {
+    text-align: justify;
+}
+
+.important_text {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 @media(max-width: 770px) {
     .information_container {
         position: relative;
