@@ -31,7 +31,7 @@ body{
 
 .information_right_main {
     float: left;
-    width: 50%;
+    width: 70%;
     height: auto;
     padding-top: 70px;
     padding-left: 24px;
@@ -97,6 +97,39 @@ body{
     float: right;
     width: 75%;
     background-color: #f8f8f8;
+}
+
+.information_right_main_title {
+    font-size: 2em;
+}
+
+.information_right_main_body {
+    margin-left: 20px;
+}
+
+.information_right_main_section_title {
+    text-decoration: underline;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+.information_right_main_section_body {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    text-indent: 2em;
+    text-align: justify;
+}
+
+ol li {
+    list-style: square outside;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    cursor: pointer;
 }
 
 @media(max-width: 770px) {
