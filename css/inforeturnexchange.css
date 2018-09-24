@@ -121,7 +121,8 @@ body{
 }
 
 ol li {
-    list-style: decimal outside;
+    /*list-style: decimal outside;去掉title前面的数字*/
+    list-style:none;
 }
 
 ul li {
