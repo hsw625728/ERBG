@@ -24,7 +24,7 @@ $password = md5(trim($_POST["password"]));
     $num = mysqli_num_rows($result);
     if($num)
     {
-        echo "<script>alert('登录成功！'); window.location.href='http://erbgfashiongroup.com';</script>";
+        echo "<script>alert('登录成功！'); window.location.href='http://re-blue.com';</script>";
     }
     else
     {
